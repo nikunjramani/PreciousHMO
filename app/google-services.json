@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "project_number": "369674328917",
+    "firebase_url": "https://bravehmo-6f637.firebaseio.com",
+    "project_id": "bravehmo-6f637",
+    "storage_bucket": "bravehmo-6f637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369674328917:android:6adeabc809966dbbce2ddc",
+        "android_client_info": {
+          "package_name": "com.lion_tech.hmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwnd9u6sCklePoVy2OXV1Zf-TBrxThElk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369674328917:android:330aa89744557ee3ce2ddc",
+        "android_client_info": {
+          "package_name": "com.lion_tech.liontechhmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwnd9u6sCklePoVy2OXV1Zf-TBrxThElk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369674328917:android:1cbc04f7f2899aa4ce2ddc",
+        "android_client_info": {
+          "package_name": "com.lion_tech.precioushmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwnd9u6sCklePoVy2OXV1Zf-TBrxThElk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369674328917:android:568274cea826c728ce2ddc",
+        "android_client_info": {
+          "package_name": "com.liontech.callgateway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwnd9u6sCklePoVy2OXV1Zf-TBrxThElk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369674328917:android:90858e89c8185687ce2ddc",
+        "android_client_info": {
+          "package_name": "com.songhai.hmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwnd9u6sCklePoVy2OXV1Zf-TBrxThElk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369674328917-srl6kdpompb3md0nehl0g6mf05fjpjvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

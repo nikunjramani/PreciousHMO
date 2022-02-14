@@ -1,0 +1,230 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">LionTech Cub 1</string>
+    <string name="login">SIGN IN</string>
+    <string name="logintext">Sign into Your Account Below</string>
+    <string name="username">Email Address</string>
+    <string name="client">Enrollee</string>
+    <string name="hospital">Provider</string>
+    <string name="password">Password</string>
+    <string name="username_req">Email Required</string>
+    <string name="password_req">Password Required</string>
+    <string name="title_activity_client_dashboard">ClientDashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="title_activity_dashboard_client">DashboardClient</string>
+    <string name="dashboard">My Dashboard</string>
+    <string name="enroleedashboard">Enrolee Dashboard</string>
+    <string name="providerdashboard">Provider Dashboard</string>
+    <string name="today_is_sunday_16_february_2020">Sunday, 16 February 2020</string>
+    <string name="welcome_back">Welcome Back, </string>
+    <string name="client_name">Enrollee Name</string>
+    <string name="contentdescription">contentDescription</string>
+    <string name="total_dependants">Total Dependants</string>
+    <string name="twenty">20</string>
+    <string name="total_providers">Total Providers</string>
+    <string name="dependants_request">Dependant Requests</string>
+    <string name="total_encounters">Total Encounters</string>
+    <string name="change_provider_request">Provider Change</string>
+    <string name="total_complains">Total Complains</string>
+    <string name="enrollee_profile">Enrollee Profile</string>
+    <string name="my_dependant">My Dependants</string>
+    <string name="change_provider">Hospital Roaming</string>
+    <string name="my_complains">My Complains</string>
+    <string name="change_login_detail">Change Login Detail</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="other_name">Other Name</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="organization">Organization</string>
+    <string name="contact_no">Contact No</string>
+    <string name="_12_04_2020">12:04:2020</string>
+    <string name="sex">Sex</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="resident_address">Resident Address</string>
+    <string name="email">Email Address</string>
+    <string name="subscription_package">Health care plans</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="state">State</string>
+    <string name="add_dependant">Add New Dependant</string>
+    <string name="relation">Relation</string>
+    <string name="first_name_required">First Name required!!!</string>
+    <string name="last_name_required">Last name required !!!</string>
+    <string name="other_name_required">Other name required !!!</string>
+    <string name="contact_name_required">Contact no required !!!</string>
+    <string name="subject">Subject</string>
+    <string name="complain">Complains</string>
+    <string name="complaint_description">Complain Description</string>
+    <string name="subject_required">Subject required</string>
+    <string name="add">Add</string>
+    <string name="provider">Provider</string>
+    <string name="location">Location</string>
+    <string name="select">Select</string>
+    <string name="current_provider">Current Provider</string>
+    <string name="logout">Logout</string>
+    <string name="age">Age</string>
+    <string name="detail">Detail</string>
+    <string name="age_required">Age Required</string>
+    <string name="only_spouse_age_will_be_greater_than_21">Only spouse age will be greater than 21</string>
+    <string name="cancel">Cancel</string>
+    <string name="dependent_detail">Dependent Detail</string>
+    <string name="s_package">Package</string>
+    <string name="complaint_code">Code</string>
+    <string name="view_description">View Description</string>
+    <string name="current_password">Current Password</string>
+    <string name="update">Update</string>
+    <string name="required">Required</string>
+    <string name="pass_did_not_match">Password didn\'t match</string>
+    <string name="wrong_password">Wrong Password</string>
+    <string name="dependednt_add_successfully">Dependent Added successfully</string>
+    <string name="hmo">LionTech Cub 1</string>
+    <string name="welcome_back_">Welcome Back</string>
+
+
+    <string-array name="marital_options">
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
+
+    <string-array name="sex_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="state_options">
+        <item>State 1</item>
+        <item>State 2</item>
+    </string-array>
+
+    <string-array name="relation_options">
+        <item>Spouse</item>
+        <item>Son</item>
+        <item>Daughter</item>
+    </string-array>
+    <string name="title_activity_hospital_dashboard">HospitalDashboard</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="request">Encounter</string>
+    <string name="bills">Bills</string>
+    <string name="total_authorization">Total Authorizations</string>
+    <string name="total_bills">Total Bills</string>
+    <string name="total_enrollees">Total Enrollees</string>
+    <string name="total_appointment">Total Appointment</string>
+    <string name="search_enrollee">Search Enrollee</string>
+    <string name="select_servicess">Select Services</string>
+    <string name="select_drugs">Select Drugs</string>
+    <string name="diagnose">Diagnose</string>
+    <string name="procedure">Procedure</string>
+    <string name="investigation">Investigation</string>
+    <string name="medical_personnel">Medical Personnel</string>
+    <string name="request_for_authorization_code">Request for Authorization Code</string>
+    <string name="date">Date</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="name_required">Name Required</string>
+    <string name="slect_drug_from_list">First select drugs from the list</string>
+    <string name="slect_service_from_list">First select service from services list</string>
+    <string name="name">Full Name</string>
+    <string name="rejected">Rejected</string>
+    <string name="request_code">Request Code</string>
+    <string name="enrollee_name">Enrollee Name</string>
+    <string name="authorization_code">Authorization Code</string>
+    <string name="status">Status</string>
+    <string name="reject_reason">Reject Reason</string>
+    <string name="progress">Progress</string>
+    <string name="medical_history_health_declaration">Medical History/Health Declaration</string>
+    <string name="health_detail">Have you or anyone mentioned in this form been diagnosed with any of these diseases below? Please tick as appropriate</string>
+    <string name="sickle_cell_disease">Sickle Cell Disease</string>
+    <string name="kidney_disease">Kidney Disease</string>
+    <string name="epilepsy">Epilepsy</string>
+    <string name="cancer_prostate_cervical">Cancer(Prostate,Cervical)</string>
+    <string name="asthma">Asthma</string>
+    <string name="hiv_aids">HIV/AIDS</string>
+    <string name="surgeries">Surgeries</string>
+    <string name="hypertension">Hypertension</string>
+    <string name="cataract">Cataract</string>
+    <string name="goiter">Goiter</string>
+    <string name="peptic_ulcer">Peptic Ulcer</string>
+    <string name="hepatitis">Hepatitis</string>
+    <string name="glaucoma">Glaucoma</string>
+    <string name="tuberculosis">Tuberculosis</string>
+    <string name="hemorrhoids">Hemorrhoids</string>
+    <string name="diaberes_mellitus">Diaberes Mellitus</string>
+    <string name="if_any_is_ticked_kindly_details_here">If any is ticked kindly details here</string>
+    <string name="membership_declaration">Membership Declaration</string>
+    <string name="subscription_benefits">Health Care Benefits</string>
+    <string name="please_fill_the_form_carefully_because_you_only_one_chance_to_update_your_profile">Please fill the form carefully because you have only one chance to update your profile</string>
+    <string name="warning">Warning</string>
+    <string name="ok">Ok</string>
+    <string name="plane">Plane</string>
+    <string name="cost">Cost</string>
+    <string name="total_subscription">Total Health Plan</string>
+    <string name="binefits">View Benefits</string>
+    <string name="id">ID</string>
+    <string name="save">Save</string>
+    <string name="please_select_state">Please Select State</string>
+    <string name="select_service">Select Service</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="generated_code">Generated Code</string>
+    <string name="medical">Medical</string>
+    <string name="client_diagnose_detail">Enrollee Encounter Details</string>
+    <string name="servicess">Servicess</string>
+    <string name="drugs">Drugs</string>
+    <string name="done">Done</string>
+    <string name="approved_bills">Approved Bills</string>
+    <string name="your_account_is_not_active">Your account is not active</string>
+    <string name="address">Address</string>
+    <string name="electronics">Electronic ID</string>
+
+
+    <string name="send_bill_request">Send Bill Request</string>
+    <string name="code_generated">Code Generated</string>
+    <string name="authorized">Authorized</string>
+    <string name="bill_approved">Bill Approved</string>
+    <string name="bill_rejected">Bill Rejected</string>
+    <string name="bill_requested">Bill Requested</string>
+    <string name="request_for_code">Requested For Code</string>
+    <string name="code_requested">Code Requested</string>
+    <string name="payment_advice">Payment Advice</string>
+    <string name="paid_bills">Paid Bills</string>
+    <string name="bill_tracker">Bill Tracker</string>
+    <string name="conection_problem">Internet connection Problem</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="pdf">PDF</string>
+    <string name="electronics_id">Electronic ID</string>
+    <string name="view_dependents">VIEW DEPENDANT</string>
+    <string name="change_reason">Change Reason</string>
+    <string name="why_you_are_changing_provider">Why you are changing provider ?</string>
+    <string name="title_activity_info_menu">InfoMenuActivity</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="faq">FAQ</string>
+    <string name="user_policy">User Policy</string>
+    <string name="how_the_schem_work">How the Scheme works</string>
+    <string name="contact_Us">Contact Us</string>
+    <string name="social_media">Social Media handles</string>
+    <string name="off_cairo_street_ademola_adetokunbo_crescent_wuse_ii_fct_abuja">Off Cairo Street, Ademola Adetokunbo Crescent Wuse II, FCT Abuja</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">TODO</string>
+    <string name="_070077324687466">070077324687466</string>
+    <string name="_08067456841">08067456841</string>
+    <string name="_08185637414">08185637414</string>
+    <string name="info_precioushmo_com">info@precioushmo.com</string>
+    <string name="message">Message</string>
+    <string name="we_are_here_for_you_24_7_feel_free_to_contact_us_anytime">We are here for you 24/7, feel free to contact Us anytime</string>
+    <string name="get_in_touch">GET IN TOUCH</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_text">Reset your password with email address</string>
+
+
+</resources>

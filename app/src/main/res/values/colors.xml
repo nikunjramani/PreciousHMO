@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#00008b</color>-->
+<!--    <color name="colorPrimaryDark">#00008B</color>-->
+    <color name="colorPrimary">#020830</color>
+    <color name="colorPrimaryDark">#020830</color>
+    <color name="colorAccent">#990005</color>
+
+    <color name="colorOne">#A5DD8D</color>
+    <color name="colorTwo">#6EBE4C</color>
+    <color name="colorThree">#179FDD</color>
+    <color name="colorFour">#FF5722</color>
+    <color name="colorFive">#E98E71</color>
+    <color name="colorSix">#800E38</color>
+    <color name="colorSeven">#2418C7</color>
+    <color name="colorEight">#4C48C9</color>
+    <color name="colorNine">#2196F3</color>
+    <color name="authorized">#58BE9A</color>
+    <color name="requestForCode">#FF9800</color>
+    <color name="rejectedColor">#F44336</color>
+    <color name="sendBillRequest">#68B4F1</color>
+</resources>

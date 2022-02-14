@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/mobile_navigation"
+
+    app:startDestination="@+id/nav_dashboard">
+
+
+
+    <fragment
+
+        android:id="@+id/nav_dashboard"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.dashboard.DashboardFragment"
+
+        android:label="@string/dashboard"
+
+        tools:layout="@layout/fragment_client_dashboard" />
+
+
+
+    <fragment
+
+        android:id="@+id/nav_enrollee_profile"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.enrolleeProfile.EnrolleeProfile"
+
+        android:label="@string/enrollee_profile"
+
+        tools:layout="@layout/fragment_enrollee_profile" />
+
+
+
+    <fragment
+
+        android:id="@+id/nav_dependants"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.dependants.DependantFragment"
+
+        android:label="@string/total_providers"
+
+        tools:layout="@layout/fragment_total_providers" />
+
+
+
+    <fragment
+
+        android:id="@+id/nav_change_login_detail"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.changeLoginDetail.ChangeLoginDetail"
+
+        android:label="@string/dependants_request"
+
+        tools:layout="@layout/fragment_change_login_detail" />
+
+    <fragment
+
+        android:id="@+id/nav_change_provider_request"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.changeProviderRequest.ChangeProviderRequest"
+
+        android:label="@string/change_provider_request"
+
+        tools:layout="@layout/fragment_change_provider_request" />
+
+
+
+    <fragment
+
+        android:id="@+id/nav_complains"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.complains.Complains"
+
+        android:label="@string/total_complains"
+
+        tools:layout="@layout/fragment_complains"
+
+        />
+
+
+
+    <fragment
+
+        android:id="@+id/subscriptionFragment"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.subscription.SubscriptionFragment"
+
+        android:label="@string/total_subscription"
+
+        tools:layout="@layout/subscription_fragment"
+
+
+
+        />
+
+    <fragment
+
+        android:id="@+id/electronicsFrag"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.electronics.ElectronicsFrag"
+
+        android:label="electronics_fragment"
+
+        tools:layout="@layout/electronics_fragment" />
+
+    <fragment
+
+        android:id="@+id/nav_contact_us"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.contactUs.ContactUs"
+
+        android:label="Contact Us" />
+
+    <fragment
+
+        android:id="@+id/nav_social_media_handles"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.providers.SocialMedia"
+
+        android:label="Social Media" />
+
+    <fragment
+
+        android:id="@+id/nav_user_policy"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.providers.UserPolicy"
+
+        android:label="User Policy" />
+
+    <fragment
+
+        android:id="@+id/nav_how_the_scheme_work"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.providers.SchemeWork"
+
+        android:label="How the Scheme works" />
+
+    <fragment
+
+        android:id="@+id/nav_faq"
+
+        android:name="com.lion_tech.hmo.client.activities.fragments.providers.Faq"
+
+        android:label="FAQ" />
+
+</navigation>

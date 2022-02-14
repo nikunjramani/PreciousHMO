@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/complaint_description"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvRequestCodeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/authorization_code"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTop"
+
+            />
+
+        <TextView
+            android:id="@+id/tvRequestCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/first_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tvRequestCodeTitle"
+            app:layout_constraintTop_toTopOf="@id/tvRequestCodeTitle" />
+
+        <TextView
+            android:id="@+id/tvNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/enrollee_name"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/tvRequestCodeTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvRequestCodeTitle" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvRequestCode"
+            app:layout_constraintTop_toTopOf="@id/tvNameTitle" />
+
+        <TextView
+            android:id="@+id/tvDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/date"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameTitle" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_12_04_2020"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="@+id/tvDateTitle" />
+
+        <TextView
+            android:id="@+id/tvTotalBillTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/total_bills"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvDateTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvDateTitle" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_12_04_2020"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvDate"
+            app:layout_constraintTop_toTopOf="@+id/tvTotalBillTitle" />
+
+        <TextView
+            android:id="@+id/tvStatusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/status"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvTotalBillTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalBillTitle" />
+
+        <TextView
+            android:id="@+id/tvReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rejected"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvStatus"
+            app:layout_constraintTop_toTopOf="@+id/tvStatusTitle" />
+
+        <TextView
+            android:id="@+id/tvRejReasonsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/status"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvStatusTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvStatusTitle" />
+
+        <TextView
+            android:id="@+id/tvRejectReason"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/rejected"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvReject"
+            app:layout_constraintTop_toTopOf="@+id/tvRejReasonsTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

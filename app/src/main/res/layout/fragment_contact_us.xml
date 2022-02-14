@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvGetInTouch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/get_in_touch"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMessaged"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/we_are_here_for_you_24_7_feel_free_to_contact_us_anytime"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/tvGetInTouch"
+                    app:layout_constraintTop_toBottomOf="@id/tvGetInTouch" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvMessaged"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMessaged" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvMessaged"
+                    app:layout_constraintTop_toBottomOf="@+id/tiName" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/message"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvMessaged"
+                    app:layout_constraintTop_toBottomOf="@+id/tiEmail" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="252dp"
+                    android:layout_height="105dp"
+                    app:srcCompat="@drawable/phc"
+                    tools:layout_editor_absoluteX="62dp"
+                    tools:layout_editor_absoluteY="86dp"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="338dp"
+                    android:layout_height="45dp"
+                    android:text="@string/info_precioushmo_com"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="210dp"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="50dp"
+                    android:layout_height="43dp"
+                    app:srcCompat="@android:drawable/ic_dialog_email"
+                    tools:layout_editor_absoluteX="12dp"
+                    tools:layout_editor_absoluteY="210dp"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/todo" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="68dp"
+                    android:layout_height="58dp"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call_forward"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="254dp"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="289dp"
+                    android:layout_height="42dp"
+                    android:text="@string/_070077324687466"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="88dp"
+                    tools:layout_editor_absoluteY="269dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_08067456841"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="88dp"
+                    tools:layout_editor_absoluteY="327dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_08185637414"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="95dp"
+                    tools:layout_editor_absoluteY="387dp"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="77dp"
+                    android:layout_height="51dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView4"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call_on_hold"
+                    tools:layout_editor_absoluteY="316dp"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/todo" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="81dp"
+                    android:layout_height="49dp"
+                    app:srcCompat="@android:drawable/stat_sys_vp_phone_call"
+                    tools:layout_editor_absoluteX="-2dp"
+                    tools:layout_editor_absoluteY="378dp"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="406dp"
+                    android:layout_height="115dp"
+                    android:text="@string/off_cairo_street_ademola_adetokunbo_crescent_wuse_ii_fct_abuja"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="452dp"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="58dp"
+                    android:layout_height="63dp"
+                    app:srcCompat="@drawable/ic_contact"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="441dp"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

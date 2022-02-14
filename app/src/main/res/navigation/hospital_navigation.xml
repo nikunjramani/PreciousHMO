@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_hospital_dashboard">
+
+    <fragment
+        android:id="@+id/nav_hospital_request"
+        android:name="com.lion_tech.hmo.hospital.hospital_dashboard.ui.request.HospitalRequestFrag"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_hospital_request" />
+
+    <fragment
+        android:id="@+id/nav_hospital_dashboard"
+        android:name="com.lion_tech.hmo.hospital.hospital_dashboard.ui.dashboard.HospitalDashboardFrag"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_hospital_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_hospital_change_password"
+        android:name="com.lion_tech.hmo.hospital.hospital_dashboard.ui.chage_password.HospitalChangePasswordFrag"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_hospital_change_password" />
+
+    <fragment
+        android:id="@+id/nav_hospital_bills"
+        android:name="com.lion_tech.hmo.hospital.hospital_dashboard.ui.bills.HospitalBillsFrag"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_hospital_bills" />
+
+    <fragment
+        android:id="@+id/nav_hospital_complains"
+        android:name="com.lion_tech.hmo.hospital.hospital_dashboard.ui.hospital_compains.HospitalComplainsFrag"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_hospital_complains" />
+    <fragment
+        android:id="@+id/hospitalPaidBill"
+        android:name="com.lion_tech.hmo.hospital.hospital_dashboard.ui.paid_bills.HospitalPaidBill"
+        android:label="HospitalPaidBill" />
+</navigation>

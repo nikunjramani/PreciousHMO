@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_hospital_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/nav_hospital_request"
+            android:icon="@drawable/ic_request"
+            android:title="@string/request" />
+
+        <item
+            android:id="@+id/nav_hospital_bills"
+            android:icon="@drawable/ic_bills"
+            android:title="@string/bill_tracker" />
+
+        <item
+            android:id="@+id/hospitalPaidBill"
+            android:icon="@drawable/ic_paid_bill"
+            android:title="@string/payment_advice" />
+
+        <item
+            android:id="@+id/nav_hospital_complains"
+            android:icon="@drawable/ic_compliant"
+            android:title="@string/complain" />
+
+        <item
+            android:id="@+id/nav_hospital_change_password"
+            android:icon="@drawable/ic_edit"
+            android:title="@string/change_login_detail" />
+
+    </group>
+
+</menu>

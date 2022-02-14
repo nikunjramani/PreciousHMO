@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvReqCodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/complaint_code"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvReqCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/tvReqCodeTitle" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/_12_04_2020"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvReqCodeTitle" />
+
+    <TextView
+        android:id="@+id/tvNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/tvReqCodeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvReqCodeTitle" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="dsfsdf"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/tvNameTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvNameTitle"
+        app:layout_constraintEnd_toStartOf="@+id/tvTotalBillTitle"
+        />
+
+    <LinearLayout
+        android:id="@+id/lvReject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCodeRejectReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="10dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnCodeRejectReason"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1dp"
+                    android:layout_weight="1"
+                    android:text="Auth Reason"
+                    android:textColor="@android:color/holo_red_dark" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBillRejectReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnBillRejectReason"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Bill Reason"
+                    android:textColor="@android:color/holo_red_dark" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvReject">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btnCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="Request For Code"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnBill"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="Request For Bill"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+
+                />
+
+            <Button
+                android:id="@+id/tvViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1.2"
+                android:background="@color/colorPrimaryDark"
+                android:text="Detail"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1.4"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="1.4"
+                    android:src="@drawable/ic_edit_white"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvViewDescription"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:text="@string/view_description"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/tvDate"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tvNameTitle"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tvName"-->
+    <!--        android:background="@color/colorPrimaryDark"-->
+    <!--        android:drawableLeft="@drawable/ic_select"-->
+    <!--        android:paddingEnd="8dp"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/tvTotalBill"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="@string/rejected"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvDate"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvTotalBillTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/total_bill"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTotalBill"
+        app:layout_constraintEnd_toStartOf="@+id/tvTotalBill"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalBill" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

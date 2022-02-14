@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA">
+
+            <!--                <ProgressBar-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    android:id="@+id/progressBar"-->
+            <!--                    />-->
+
+            <TextView
+                android:id="@+id/tvTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/client_diagnose_detail"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTop">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvCodeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/generated_code"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:text="@string/generated_code"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/tvCodeTitle"
+                        app:layout_constraintTop_toTopOf="@+id/tvCodeTitle"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvNameTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/name"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvCodeTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCodeTitle" />
+
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:layout_marginStart="90dp"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/tvNameTitle"
+                        app:layout_constraintTop_toTopOf="@+id/tvNameTitle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvHospitalNameTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/hospital"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvNameTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNameTitle" />
+
+
+                    <TextView
+                        android:id="@+id/tvHospitalName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hospital"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvName"
+                        app:layout_constraintTop_toTopOf="@+id/tvHospitalNameTitle"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvDateTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/date"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvHospitalNameTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvHospitalNameTitle" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_12_04_2020"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvHospitalName"
+                        app:layout_constraintTop_toTopOf="@+id/tvDateTitle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvBillTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/total_bill"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvDateTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDateTitle" />
+
+
+                    <TextView
+                        android:id="@+id/tvBill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_bill"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/tvDate"
+                        app:layout_constraintTop_toTopOf="@+id/tvBillTitle"
+
+                        />
+
+                    <View
+                        android:id="@+id/viewDivider1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_margin="8dp"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBillTitle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvDiagnoseTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/diagnose"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvDateTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/viewDivider1" />
+
+
+                    <TextView
+                        android:id="@+id/tvDiagnose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/diagnose"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvDate"
+                        app:layout_constraintTop_toTopOf="@+id/tvDiagnoseTitle" />
+
+
+                    <TextView
+                        android:id="@+id/tvProcedureTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/procedure"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvDiagnoseTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDiagnose" />
+
+
+                    <TextView
+                        android:id="@+id/tvProcedure"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/procedure"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvDiagnose"
+                        app:layout_constraintTop_toTopOf="@+id/tvProcedureTitle" />
+
+
+                    <TextView
+                        android:id="@+id/tvInvestigationTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/investigation"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvProcedureTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvProcedure" />
+
+
+                    <TextView
+                        android:id="@+id/tvInvestigation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/investigation"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvProcedure"
+                        app:layout_constraintTop_toTopOf="@+id/tvInvestigationTitle" />
+
+                    <TextView
+                        android:id="@+id/tvMedicalTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/medical"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="@+id/tvInvestigationTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInvestigation" />
+
+
+                    <TextView
+                        android:id="@+id/tvMedical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/medical"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvInvestigation"
+                        app:layout_constraintTop_toTopOf="@+id/tvMedicalTitle" />
+
+
+                    <View
+                        android:id="@+id/viewDivider2"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_margin="8dp"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvMedical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvServicesTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/servicess"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/tvMedicalTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/viewDivider2" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvServices"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvServicesTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvServicesTitle" />
+
+                    <View
+                        android:id="@+id/viewDivider3"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_margin="8dp"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvServices"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvDrugsTitle"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/drugs"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/tvMedicalTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/viewDivider3" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvDrugs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tvServicesTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDrugsTitle" />
+
+                    <Button
+                        android:id="@+id/btnDone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="@string/done"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvDrugs" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

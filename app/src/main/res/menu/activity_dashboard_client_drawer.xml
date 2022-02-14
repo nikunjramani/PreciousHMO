@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_enrollee_profile"
+            android:icon="@drawable/ic_perso"
+            android:title="@string/enrollee_profile" />
+
+
+        <item
+            android:id="@+id/nav_dependants"
+            android:icon="@drawable/ic_dependent"
+            android:title="@string/my_dependant" />
+
+        <item
+            android:id="@+id/nav_change_provider_request"
+            android:icon="@drawable/ic_change_provider"
+            android:title="@string/change_provider" />
+
+
+        <item
+            android:id="@+id/nav_complains"
+            android:icon="@drawable/ic_compliant"
+            android:title="@string/my_complains" />
+
+        <item
+            android:id="@+id/subscriptionFragment"
+            android:icon="@drawable/ic_health_care"
+            android:title="@string/subscription_package" />
+
+        <item
+            android:id="@+id/electronicsFrag"
+            android:icon="@drawable/ic_account_"
+            android:title="@string/electronics_id" />
+
+        <item
+            android:id="@+id/nav_change_login_detail"
+            android:icon="@drawable/ic_password"
+            android:title="@string/change_login_detail" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/medical_history_health_declaration"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHistoryDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/health_detail"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHistory" />
+
+    <LinearLayout
+        android:id="@+id/layoutMedical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHistoryDetail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_sickle_cell_disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/sickle_cell_disease" />
+
+            <CheckBox
+                android:id="@+id/cb_kidney_disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kidney_disease" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_epilepsy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/epilepsy" />
+
+            <CheckBox
+                android:id="@+id/cb_cancer_prostate_cervical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancer_prostate_cervical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_asthma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/asthma" />
+
+            <CheckBox
+                android:id="@+id/cb_hiv_aids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hiv_aids" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_surgeries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/surgeries" />
+
+            <CheckBox
+                android:id="@+id/cb_hypertension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hypertension" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_cataract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/cataract" />
+
+            <CheckBox
+                android:id="@+id/cb_goiter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/goiter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_peptic_ulcer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/peptic_ulcer" />
+
+            <CheckBox
+                android:id="@+id/cb_hepatitis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hepatitis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_glaucoma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/glaucoma" />
+
+            <CheckBox
+                android:id="@+id/cb_tuberculosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tuberculosis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_hemorrhoids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/hemorrhoids" />
+
+            <CheckBox
+                android:id="@+id/cb_diaberes_mellitus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/diaberes_mellitus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiDetail"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMedical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/if_any_is_ticked_kindly_details_here"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvMemberShip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/membership_declaration"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tiDetail" />
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMemberShip" />
+
+    <TextView
+        android:id="@+id/tvOneDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="18dp"
+        android:text="I certify that all the information provided in this form is true to the best of my knowledge."
+
+        app:layout_constraintStart_toStartOf="@id/tvOne"
+        app:layout_constraintTop_toTopOf="@id/tvOne" />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:justificationMode="inter_word"
+        android:text="2."
+        app:layout_constraintStart_toStartOf="@id/tvOne"
+        app:layout_constraintTop_toBottomOf="@id/tvOneDetail" />
+
+    <TextView
+        android:id="@+id/tvTwoDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:justificationMode="inter_word"
+        android:text="I declare that any false information given by me in the above questionnaire or the non-disclosure of a fact if identified later will render the membership null and void."
+        app:layout_constraintStart_toStartOf="@id/tvOneDetail"
+        app:layout_constraintTop_toTopOf="@+id/tvTwo" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="3."
+        app:layout_constraintStart_toStartOf="@id/tvTwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTwoDetail" />
+
+    <TextView
+        android:id="@+id/tvTheeDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:justificationMode="inter_word"
+        android:text="I agree to abide by the terms and conditions governing membership and access to the health benefits covered by the plan in which i have enrolled."
+        app:layout_constraintStart_toStartOf="@id/tvTwoDetail"
+        app:layout_constraintTop_toTopOf="@+id/tvThree" />
+
+    <TextView
+        android:id="@+id/tvFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="4."
+        app:layout_constraintStart_toStartOf="@id/tvThree"
+        app:layout_constraintTop_toBottomOf="@+id/tvTheeDetail" />
+
+
+    <TextView
+        android:id="@+id/tvFourDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:justificationMode="inter_word"
+        android:text="I hereby give my permission to care givers to release any information requested by Precious Health Care Ltd,with respect to any clain or delivery of medical services on my account or that of my dependants for the sake of quality control,statistical and legal analysis."
+        app:layout_constraintStart_toStartOf="@id/tvTwoDetail"
+        app:layout_constraintTop_toTopOf="@+id/tvFour"
+        />
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="8dp"-->
+    <!--        android:text="1. certify that all the information provided in this form is true to the best of my knowledge.\n-->
+    <!--2. I declare that any false information given by me in the above questionnaire or the non-disclosure of a fact if identified later will render the membership null and void.\n-->
+    <!--3. I agree to abide by the terms and conditions governing membership and access to the health benefits covered by the plan in which i have enrolled.\n-->
+    <!--4. I hereby give my permission to care givers to release any information requested by Precious Health Care Ltd,with respect to any clain or delivery of medical services on my account or that of my dependants for the sake of quality control,statistical and legal analysis."-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tvMemberShip"-->
+
+    <!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
