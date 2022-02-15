@@ -25,13 +25,10 @@ import com.lion_tech.hmo.client.activities.fragments.dashboard.DashboardViewMode
 import com.lion_tech.hmo.client.activities.fragments.enrolleeProfile.EnrolleeViewModel
 import com.lion_tech.hmo.hospital.hospital_dashboard.HospitalDashboard
 import com.lion_tech.hmo.server_urls.ServerUrls
-import okhttp3.MediaType
+import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
-import okhttp3.OkHttpClient
-import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
-import java.lang.Exception
 import java.util.*
 
 
@@ -269,9 +266,13 @@ class LoginActivity : AppCompatActivity() {
 
         override fun doInBackground(vararg params: String?): String {
             val requestBody = params[0]!!.toRequestBody(JSON)
+            val body: RequestBody = MultipartBody.Builder().setType(MultipartBody.FORM)
+                .addFormDataPart("username",etUserName.text.toString())
+                .addFormDataPart("password", etPassword.text.toString())
+                .build()
             val request: Request = Request.Builder()
                 .url(params[1]!!)
-                .post(requestBody)
+                .method("POST", body)
                 .addHeader(AppLevelData.authKey, AppLevelData.authKeyValue)
                 .addHeader(AppLevelData.clientServiceKey, AppLevelData.clientServiceValue)
                 .addHeader(AppLevelData.contentTypeKey, AppLevelData.contentTypeValue)
@@ -303,6 +304,12 @@ class LoginActivity : AppCompatActivity() {
                            enrolleeViewModel.getHospitalDetail(this@LoginActivity)
                        }
                        AppLevelData.currentPass = etPassword.text.toString()
+                   }else{
+                       Toast.makeText(
+                           this@LoginActivity,
+                           jsonObject.getString("message"),
+                           Toast.LENGTH_SHORT
+                       ).show()
                    }
                }catch (ex:Exception){
                    Toast.makeText(
@@ -321,9 +328,9 @@ class LoginActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 )
                     .show()
-                progressBar.visibility = View.GONE
-                btnLogin.visibility = View.VISIBLE
             }
+            progressBar.visibility = View.GONE
+            btnLogin.visibility = View.VISIBLE
 
 
         }

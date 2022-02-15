@@ -22,10 +22,8 @@ import com.lion_tech.hmo.client.activities.fragments.dashboard.DashboardViewMode
 import com.lion_tech.hmo.client.activities.fragments.enrolleeProfile.EnrolleeViewModel
 import com.lion_tech.hmo.hospital.hospital_dashboard.HospitalDashboard
 import com.lion_tech.hmo.server_urls.ServerUrls
-import okhttp3.MediaType
+import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
-import okhttp3.OkHttpClient
-import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 import java.lang.Exception
@@ -228,9 +226,13 @@ class SplashScreen : AppCompatActivity() {
 
         override fun doInBackground(vararg params: String?): String {
             val requestBody = params[0]!!.toRequestBody(JSON)
+            val body: RequestBody = MultipartBody.Builder().setType(MultipartBody.FORM)
+                .addFormDataPart("username",sharedPre.getString("username", "").toString())
+                .addFormDataPart("password", sharedPre.getString("password", "").toString())
+                .build()
             val request: Request = Request.Builder()
                 .url(params[1]!!)
-                .post(requestBody)
+                .method("POST", body)
                 .addHeader(AppLevelData.authKey, AppLevelData.authKeyValue)
                 .addHeader(AppLevelData.clientServiceKey, AppLevelData.clientServiceValue)
                 .addHeader(AppLevelData.contentTypeKey, AppLevelData.contentTypeValue)
