@@ -90,7 +90,7 @@ class LoginActivity : AppCompatActivity() {
         ivLogo.startAnimation(rotate);
 
 //        etUserName.setText("test@liontech.com.ng")
-//      etUserName.setText("kennedyjob@yeffgs.ng")
+//        etUserName.setText("kennedyjob@yeffgs.ng")
 //        etUserName.setText("kennedyjob@myweb.ng")
 //        etUserName.setText("limih@gmail.com")
 //        etUserName.setText("test@liontech.com.ng")
@@ -276,6 +276,7 @@ class LoginActivity : AppCompatActivity() {
                 .addHeader(AppLevelData.clientServiceKey, AppLevelData.clientServiceValue)
                 .addHeader(AppLevelData.contentTypeKey, AppLevelData.contentTypeValue)
                 .build()
+            Log.d("TAGGG", "doInBackground: "+ request)
                 client.newCall(request).execute()
                     .use { response -> return response.body!!.string() }
         }

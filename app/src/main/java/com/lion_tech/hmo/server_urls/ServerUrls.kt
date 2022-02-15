@@ -3,7 +3,7 @@ package com.lion_tech.hmo.server_urls
 class ServerUrls {
     companion object {
         private const val baseUrl = "https://liontechhmo.liontech.com.ng/app/index.php/api"
-        const val loginUr = "$baseUrl/auth/login/client"
+        const val loginUr = "$baseUrl/auth/login_client"
             const val resetPasswordUrl = "$baseUrl/client/resetpassword"
 
             const val HOSPITAL_LOGIN = "$baseUrl/auth/login/hospital"
