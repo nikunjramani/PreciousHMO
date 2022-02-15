@@ -98,36 +98,32 @@ class ResetPasswordActivity : AppCompatActivity() {
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
             Log.d("loginResul", result)
-            if (!result.isNullOrEmpty()) {
-                try {
+//                try {
 
-                    val jsonObject = JSONObject(result)
-
-                    val responseStatus = jsonObject.getInt("status")
-                    message = jsonObject.getString("message")
-                    if (responseStatus == 200) {
-
-                    }
-                }catch (ex: Exception){
-                    Toast.makeText(
-                        this@ResetPasswordActivity,
-                        "Internet connection is very slow",
-                        Toast.LENGTH_SHORT
-                    )
-                        .show()
+//                    val jsonObject = JSONObject(result)
+//
+//                    val responseStatus = jsonObject.getInt("status")
+//                    message = jsonObject.getString("message")
+//                    Log.d("loginResul", message)
+//
+//                    if (responseStatus == 200) {
+                        Toast.makeText(
+                            this@ResetPasswordActivity,
+                            "Please check your mail",
+                            Toast.LENGTH_SHORT
+                        )
+                            .show()
+//                    }
+//                }catch (ex: Exception){
+//                    Toast.makeText(
+//                        this@ResetPasswordActivity,
+//                        "Internet connection is very slow",
+//                        Toast.LENGTH_SHORT
+//                    )
+//                        .show()
                     progressBar.visibility = View.GONE
                     btnResetPassword.visibility = View.VISIBLE
-                }
-            } else {
-                Toast.makeText(
-                    this@ResetPasswordActivity,
-                    "Wrong username",
-                    Toast.LENGTH_SHORT
-                )
-                    .show()
-                progressBar.visibility = View.GONE
-                btnResetPassword.visibility = View.VISIBLE
-            }
+//                }
 
 
         }
